@@ -5,14 +5,9 @@ function TodoForm({ onAdd }) {
 
   const handleSubmit = (e) => {
     e.preventDefault(); 
-
-    const acc = []
-
-    if (inputValue = 0){
-return acc
-    }
-    
-  };
+if ( inputValue.trim() == "") return
+  onAdd(inputValue)
+  }
 
   return (
     <form className="todo-form" onSubmit={handleSubmit}>

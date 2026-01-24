@@ -1,14 +1,13 @@
 import { useState } from 'react'
-import { FilterButtons } from './components/FilterButton';
-import { TodoList } from './components/TodoList';
+import FilterButtons  from './components/FilterButton';
+import  TodoList  from './components/TodoList';
 import TodoForm from './components/TodoForm';
 
 function App() {
   const [todos, setTodos] = useState([])
-  
-  
+
   const [filter, setFilter] = useState("all")
-  // Начальное значение: 'all'
+  
 
   // Функция для добавления новой задачи
   const addTodo = (text) => {
